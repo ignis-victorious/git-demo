@@ -13,14 +13,14 @@ def hello(name: str = "World") -> str:
     return f"Hello, {name}!"
 
 
-# @app.get("/goodbye")
-# def goodbye(name: str = "World") -> str:
-#     return f"Goodbye, {name}!"
-
-
 @app.get("/goodbye")
-def goodbye() -> str:
-    return "Goodbye, World!"
+def goodbye(name: str = "World") -> str:
+    return f"Goodbye, {name}!"
+
+
+# @app.get("/goodbye")
+# def goodbye() -> str:
+#     return "Goodbye, World!"
 
 
 #  ___________________
