@@ -13,6 +13,11 @@ def hello(name: str = "World") -> str:
     return f"Hello, {name}!"
 
 
+@app.get("/goodbye")
+def goodbye() -> str:
+    return "Goodbye, World!"
+
+
 #  ___________________
 #  Import LIBRARIES
 #  Import FILES

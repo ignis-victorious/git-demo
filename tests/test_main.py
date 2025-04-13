@@ -16,3 +16,10 @@ def test_hello() -> None:
     assert response.status_code == 200, response.text
     data = response.json()
     assert data == "Hello, World!"
+
+
+def test_goodbye() -> None:
+    response = client.get("/goodbye")
+    assert response.status_code == 200, response.text
+    data = response.json()
+    assert data == "Goodbye, World!"
